@@ -79,6 +79,7 @@ nav a {
 }
 
 /* main section style start */
+/* teams section starts */
 main{
     max-width: 1440px;
     margin: 80px auto;
@@ -116,10 +117,54 @@ main{
 
 
 
-
-
-
-
+/* fact section starts */
+.fact-title{
+    color: #131313;
+    font-size: 30px;
+    font-weight: 700;
+}
+.fact-card-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 100px 0;
+    text-align: center;
+}
+.card{
+    border: 2px solid #FF900E;
+    padding: 40px;
+    border-radius: 8px;
+}
+.card-status{
+    font-size: 30px;
+    color: #131313;
+}
+/* sponsor section design */
+.sponsor-title{
+    text-align: center;
+    color: #131313;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.sponsor-description{
+    text-align: center;
+}
+.sponsor{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 70px 0;
+}
+footer{
+    background-color: #FFF4E7;
+    padding: 30px 0;
+}
+footer p{
+    color: #424242;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+}
 
 
 /* responsive media queries & header starts here */
@@ -128,7 +173,7 @@ main{
     header{
         padding: 20px;
     }
-    nav, .teams-container{
+    nav, .teams-container, .fact-card-container, .sponsor{
         flex-direction: column;
     }
     nav ul{
@@ -139,13 +184,27 @@ main{
         grid-template-columns: 1fr;
         padding: 15px 0;
     }
+    .fact-title, .fact-description{
+        text-align: center;
+        padding: 15px;
+    }
+    .fact-card-container{
+        gap: 20px;
+    }
+    .sponsor-section{
+        padding: 20px;
+    }
+    .sponsor img{
+        margin-top: 50px;
+    }
+
 }
 /* medium devices or tablet devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     header{
         padding: 50px;
     }
-    nav, .teams-container{
+    nav, .teams-container, .fact-card-container, .sponsor{
         flex-direction: column;
     }
     nav ul{
@@ -154,5 +213,19 @@ main{
     .teams-content{
         padding: 30px;
     }
+    .fact-card-container{
+        gap: 20px;
+    }
+    .fact-title, .fact-description{
+        text-align: center;
+        padding: 15px;
+    }
+    .sponsor-section{
+        padding: 20px;
+    }
+    .sponsor img{
+        margin-top: 50px;
+    }
+
 }
 /* Responsive header design ends here */
