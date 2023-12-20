@@ -237,10 +237,10 @@ footer p{
         margin-top: 50px;
     }
     .feature-img{
-        width: 80%;
+        width: 50%;
         margin-left: 0;
     }
-    ..ten-years-badge{
+    .ten-years-badge{
         position: static;
         width: 10%;
     }
